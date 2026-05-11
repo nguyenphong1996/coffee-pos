@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"docker compose up -d mongodb backend\",\"timeout\":600000,\"description\":\"Start MongoDB and backend services for user creation\"}",
+  "error": "Exit code 1\n Image mongo:7 Pulling \n a51cc64a65fc Pulling fs layer 0B\n bc234b7504f1 Pulling fs layer 0B\n 71d113031681 Pulling fs layer 0B\n ba587d903bd8 Pulling fs layer 0B\n 94bfafe79cc4 Pulling fs layer 0B\n 5a887a6ece41 Pulling fs layer 0B\n 77b340fca5a7 Pulling fs layer 0B\n f63eb04151bc Pulling fs layer 0B\n 91679343e390 Downloading 2.097MB\n 400ce0045cd4 Download complete 0B\n 71d113031681 Download complete 0B\n 91679343e390 Downloading 3.218MB\n 94bfafe79cc4 Download complete 0B\n 91679343e390 Downl...",
+  "timestamp": "2026-05-08T16:08:33.586Z",
+  "retry_count": 1
+}

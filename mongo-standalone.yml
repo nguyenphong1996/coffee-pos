@@ -1,0 +1,42 @@
+# MongoDB Standalone (chạy độc lập, không cần project)
+# Cú pháp: docker compose -f mongo-standalone.yml up -d
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: coffee-pos-mongodb-standalone
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: coffee123
+      MONGO_INITDB_DATABASE: coffee_pos
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - mongo-net
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: coffee-pos-mongo-express
+    restart: unless-stopped
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: coffee123
+      ME_CONFIG_MONGODB_ADMIN: "true"
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+    networks:
+      - mongo-net
+
+volumes:
+  mongodb_data:
+
+networks:
+  mongo-net:
+    driver: bridge

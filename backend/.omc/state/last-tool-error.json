@@ -1,0 +1,7 @@
+{
+  "tool_name": "mcp__stitch__list_projects",
+  "tool_input_preview": "{}",
+  "error": "Incompatible auth server: does not support dynamic client registration",
+  "timestamp": "2026-05-11T16:45:17.612Z",
+  "retry_count": 1
+}

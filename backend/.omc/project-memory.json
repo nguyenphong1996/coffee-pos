@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1778517345238,
+  "projectRoot": "/home/phong/coffee-pos/backend",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "express",
+        "version": "4.18.2",
+        "category": "backend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "start": "node src/server.js",
+      "dev": "nodemon src/server.js"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 1,
+      "lastAccessed": 1778517345218,
+      "keyFiles": [
+        "server.js"
+      ]
+    },
+    "src/config": {
+      "path": "src/config",
+      "purpose": "Configuration files",
+      "fileCount": 1,
+      "lastAccessed": 1778517345220,
+      "keyFiles": [
+        "database.js"
+      ]
+    },
+    "src/controllers": {
+      "path": "src/controllers",
+      "purpose": "Controllers",
+      "fileCount": 0,
+      "lastAccessed": 1778517345228,
+      "keyFiles": []
+    },
+    "src/middleware": {
+      "path": "src/middleware",
+      "purpose": "Middleware",
+      "fileCount": 4,
+      "lastAccessed": 1778517345233,
+      "keyFiles": [
+        "activityLog.js",
+        "auth.js",
+        "rateLimit.js"
+      ]
+    },
+    "src/models": {
+      "path": "src/models",
+      "purpose": "Data models",
+      "fileCount": 10,
+      "lastAccessed": 1778517345233,
+      "keyFiles": [
+        "ActivityLog.js",
+        "BackupSchedule.js",
+        "Category.js"
+      ]
+    },
+    "src/routes": {
+      "path": "src/routes",
+      "purpose": "Route handlers",
+      "fileCount": 12,
+      "lastAccessed": 1778517345234,
+      "keyFiles": [
+        "auth.js",
+        "backup.js",
+        "categories.js"
+      ]
+    },
+    "src/services": {
+      "path": "src/services",
+      "purpose": "Business logic services",
+      "fileCount": 5,
+      "lastAccessed": 1778517345234,
+      "keyFiles": [
+        "backupService.js",
+        "inventoryService.js",
+        "notificationService.js"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
